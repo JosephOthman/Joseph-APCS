@@ -63,6 +63,16 @@ public class Deck {
 	 */
 	public void shuffle() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
+		ArrayList<Card> cards2 = new ArrayList<Card>(cards.size());
+		int len = cards.size();
+		for(int i = 0; i < len; i ++) {
+			if ( cards.get(i).pointValue() != 0 ) {
+				if ( cards.get(len * (int) Math.random()).pointValue() == 0 ) {
+					cards2.set(i, cards.get(i));
+					cards.set(i, null);
+				}
+			}
+		}
 	}
 
 	/**

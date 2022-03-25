@@ -1,0 +1,9 @@
+Unicorn Unicodes: Joseph O., Ariel F., Kosta D.
+APCS
+Lab011 -- Decks, cards, shuffles, and more
+2022-03-21
+time spent: 2.5 hours/2.5 hrs
+
+DISCO: Cobo labs require high levels of collaboration and time-management. Without those, productivity crashes and hours can be spent working with minimal progress.
+
+QCC: A5 is missing parts and A6 is gone altogether? How can we easily transfer GUI usage into our other Java code?
