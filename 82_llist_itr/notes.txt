@@ -1,0 +1,6 @@
+- The way we did it, the vernacular of the next element is somewhat misleading.
+Instead, we had dummy point to the node that we want to return the cargo of, then
+point the dummy pointer to the next node, and then return the cargo of the previous
+element.
+- The reason we did this was to avoid missing either the first or last elements
+whenever we ran a FOREACH loop.
