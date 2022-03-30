@@ -1,0 +1,18 @@
+Team PJOLLN: Neil Lin, Lior Polischouk, Joseph Othman
+APCS pd7
+HW85
+2022-03-30
+time spent: 0.5 hrs
+
+DISCO:
+- Modifying the stacks for ArrayLists and LinkedLists only required changing the structure
+of the methods (e.g. using .add instead of having to write an add ourselves for arrays).
+- Adding or removing from the ArrayList did not modify the _stackSize, so we still needed
+to change _stackSize as necessary.
+- Because we were only adding and removing at the top of the stack instead of at arbitrary
+positions in the stack, we think that ArrayLists might generally work better with stacks
+than LinkedLists, since the main advantage of LinkedLists is being able to modify the
+collection easier and ArrayLists have the advantage of getting specific elements easier.
+
+QCC:
+- When to use LLStacks instead of ALStacks, or vice versa?
