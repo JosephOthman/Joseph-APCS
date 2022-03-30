@@ -60,15 +60,11 @@ public class Latkes
   //means of removal
   public String pop( )
   {
-    if( !isEmpty() ) {
-      String _temp = _stack[_stackSize];
-      _stack[_stackSize] = null;
-      _stackSize --;
-      return _temp;
-    }
-    else {
-      return null;
-    }
+    String retStr = "";
+    if ( isEmpty() )  return null;
+    retStr = _stack[ _stackSize-1 ];
+    _stackSize--;
+    return retStr;
   }// O(1) always
 
 
