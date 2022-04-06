@@ -63,11 +63,11 @@ public class Cereal {
       return _sodium;
   }
 
-  public String getFiber() {
+  public double getFiber() {
       return _fiber;
   }
 
-  public String getCarbs() {
+  public double getCarbs() {
       return _carbs;
   }
 
@@ -87,8 +87,8 @@ public class Cereal {
       return _shelf;
   }
 
-  public int getWeights() {
-      return _weights;
+  public double getWeight() {
+      return _weight;
   }
 
   public double getCups() {
@@ -100,7 +100,11 @@ public class Cereal {
   }
 
   public static void main(String[] args) {
+    Cereal grapeNutz = new Cereal ("Grape Nuts", "C", 150, 5, 350, 9, 14.0, 11.0, 9, -1, 25, 2, 1.53, .666, 69.420);
+    System.out.println(grapeNutz);
 
+    Cereal wheatNutz = new Cereal ("Wheat Nuts", "C", 149, 5, 320, 5, 16.0, 13.0, 11, 4, 22, 3, 1.63, .222, 42.069);
+    System.out.println(wheatNutz);
   }
 
 }

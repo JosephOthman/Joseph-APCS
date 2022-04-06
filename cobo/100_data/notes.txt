@@ -2,20 +2,21 @@ In N Out Burger (Orion Roven, Kosta Dubovskiy, Joseph Othman)
 APCS
 LAB08 --
 2022-04-06w
-time spent: .6 hrs
+time spent: 3 hrs
 
 DISCO
-
+Who the worst/best basketball players are
 
 QCC
+Why do you have to use a semi-colon rather than a colon when compiling with -classpath on a window's machine.
 
 
-<TNPG>'s CSV FLOW:
-<insert your description of your tools and workflow in creating, editing CSV files>
+In-N-Out's CSV FLOW:
+We can use regex to parse the CSV file by commas and white spaces, while storing the parsed data in corresponding arrays.
 
 
 TRUBZ
-<this lab involves using tools that are likely to introduce hiccups; log any troubleshooting issues here>
+javac-ing and java-ing with -classpath was very troublesome even with QAF assist.
 
 Activity 1)
   1) github.com, piazza.com
@@ -24,7 +25,31 @@ Activity 1)
   4) Look at the column label/header, which will make evident the type of data in the entire column.
   5) Music, basketball
   6) Who scored one 3 pointer in their entire NBA career: Shaquille O'Neal
+  7) Datasets for how many 3 pointers were scored by individual NBA stars in different.
+  8) https://www.nba.com/stats/players/ (we can also determine statistics based on rebounds and other factors)
+  9) The data in the above site can impact the predictions of playoff brackets by artificial intelligence.
+  10) The data was collected by recording in-game stats throughout this NBA season.
+  11) Maybe Shaq doesn't want the fact that he only scored one 3 pointer throughout his whole career.
 
+Activity 2)
+  1) Name of object: Cereal
+  2) n/a
+  3) public class Cereal
+  4) 15 instance variables
+  5) String _name, String _type, int _cals, int _protein, int _fat, int _sodium, double _fiber, double _carbs, int _sugar, int _potassium, int _vitamins, int _shelf, double _weight, double _cups, double _rating
+  8) We can get the calorie density per weight.
+  9) What specific vitamins are in the cereal.
+  10) More instance variables.
 
 Activity 3)
   1) The temperature at Atlanta, Hartsfield - Jackson Atlanta International Airport, GA is 63.0F
+  2) The temperature at (KATW)Appleton-Outagamie, WI is 48.0F
+  3)  KATL: 72.0 degrees; Light Rain Fog/Mist (wind: 220 degrees)
+      KSAV: 84.0 degrees; Mostly Cloudy (wind: 220 degrees)
+      KATW: 48.0 degrees; Overcast and Windy (wind: 190 degrees)
+      Colder at KATL
+  4) There are 70 weather stations in Wisconsin.
+  5) Filter by current temperature from the weather station.
+  6) NSTU: Pago Pago, AS, Samoa
+  7) We can also answer west/east-most territory.
+  8) Almost none, we can copy and paste our southern-most code over.

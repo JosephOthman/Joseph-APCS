@@ -1,0 +1,31 @@
+In N Out Burger (Orion Roven, Kosta Dubovskiy, Joseph Othman)
+APCS
+LAB08 --
+2022-04-06w
+time spent: .6 hrs
+
+DISCO
+
+
+QCC
+
+
+<TNPG>'s CSV FLOW:
+<insert your description of your tools and workflow in creating, editing CSV files>
+
+
+TRUBZ
+<this lab involves using tools that are likely to introduce hiccups; log any troubleshooting issues here>
+
+Activity 1)
+  1) github.com, piazza.com
+  2) https://piazza.com/legal/privacy: piazza collects our data for registration information as well as our user profile information.
+  3) Delimited: "having fixed boundaries or units". Data files are delimited because the do not contain infinite data.
+  4) Look at the column label/header, which will make evident the type of data in the entire column.
+  5) Music, basketball
+  6) Who scored one 3 pointer in their entire NBA career: Shaquille O'Neal
+  7) Datasets for how many 3 pointers were scored by individual NBA stars in different.
+  8) https://www.nba.com/stats/players/ (we can also determine statistics based on rebounds and other factors)
+
+Activity 3)
+  1) The temperature at Atlanta, Hartsfield - Jackson Atlanta International Airport, GA is 63.0F
