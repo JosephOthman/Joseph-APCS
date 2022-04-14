@@ -1,0 +1,20 @@
+/***
+Team PJOLLN: Neil Lin, Lior Polischouk, Joseph Othman
+APCS pd7
+HW91 -- Deque the Halls
+2022-04-13
+time spent: 0.5 hrs
+
+DISCO:
+- Writing and implementing the code for Deque was pretty easy using pass-thru functionality
+of LinkedLists, since everything that we wanted Deques to do were already apart of that class.
+- addFirst and removeLast follow FILO functionality, while addLast and removeFirst follow FIFO
+functionality.
+  - For this reason, a deque can be thought of as a list that has properties of both a queue
+  and of a stack.
+
+QCC:
+- Why are Deques useful, as opposed to just using the already existing LinkedList and
+DoublyLinkedLists that we've already made?
+
+**/
