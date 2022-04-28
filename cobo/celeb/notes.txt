@@ -2,11 +2,49 @@ Jerk Kafe: Joseph, Ruby, Kosta
 APCS
 L09 -- Some Folks Call It A Charades(Celebrity)
 2022-04-26
-time spent: 1.0hrs
+time spent: 4.0hrs
 
 DISCO:
- *
+ * Files can be run from outside of their directory
+ * GUI is a lot more complicated then it seems
 
 QCC:
  * If the guesser only guesses the first name of the celebrity does that suffice?
  * How can we incorperate a "skip" method if the user decides they likely do not know who the celebrity is?
+ * Why is the GUI not working?
+
+
+Short Response Answers:
+
+Act.1
+ 1. Game class, Celebrity class, and a GUI class if we are intending to do anything fancy.
+ 2. currCeleb(current celebrity being hinted), tmzCelebs(list of celebrities), and player profiles/point trackers
+ 3. To take in guesses, to process guesses, to respond to guesses, to cycle to the next celebrity, to skip to the next celebrity, to give another hint, and to add points for correct answers.
+ 4. The first 3 can be one unifed method, the next two will be game functionality that will probably be in a play() method, hinting and point allocation should be their own methods
+ 5. The play method should order the above methods into the proper logical game-flow, so first process a guess, cycle/stay/skip/hint/award points until the game is over(celebrity list is empty)
+ 6. No, not in most simple cases. Unless we disect an object into it's parts, it's functionality is for all intents and purposes a series of methods. It's attributes are a list of associated values.
+ 7. Done
+ 
+Act.2
+ 1. To set up the appropriate instance variables.
+ 2. public [ClassName]() {} for a regular one and public [ClassName]() {} for an overloaded constructor
+ 3. name and hints
+ 4. getters for hint and name, an overloaded constructor for initializing both, and a toString() outlining the celebrity and their hints
+ 5. Done. 
+ 6. Done. 
+ 7. We only have one, which is overloaded with both the name and the hints to set them up at the creation of a celebrity object. Another one could be made without hints being overloaded, and they would then have to be added after genesis.
+
+Act. 3
+ 1. JFrame and JPanel sound the most relevant, these apparently set up the physical manifestation of the GUI interface—the window itself.
+ 2. private ArrayList<Celebrity> celebGameList; we made it private, as no one except the class should be able to directly access the entire list of answers.
+ 3. It should be public, since it is the currently active celebrity.
+ 4. Done.
+ 5. Done. 
+ 6. Done. 
+ 7. Done. 
+ 8. Done. 
+ 9. Done. 
+ 10. Done.
+ 11. Done. 
+ 12. CelebrityGame does.
+ 13. It should have no knowledge of it, otherwise the user could access it directly.

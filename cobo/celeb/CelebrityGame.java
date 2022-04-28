@@ -1,3 +1,9 @@
+/* Jerk Kafe: Joseph, Ruby, Kosta
+APCS
+L09 -- Some Folks Call It A Charades(Celebrity)
+2022-04-26
+time spent: 1.5 */
+
 import java.util.ArrayList;
 
 /**
@@ -16,7 +22,7 @@ public class CelebrityGame
 	/**
 	 * The GUI frame for the Celebrity game.
 	 */
-	private CelebrityFrame gameWindow = new CelebrityFrame(this);
+	private CelebrityFrame gameWindow;
 
 	/**
 	 * The ArrayList of Celebrity values that make up the game
@@ -28,7 +34,8 @@ public class CelebrityGame
 	 */
 	public CelebrityGame()
 	{
-		celebGameList = new ArrayList<Celebrity>();
+		ArrayList<Celebrity> celebGameList = new ArrayList<Celebrity>();
+		gameWindow = new CelebrityFrame(this);
 	}
 
 	/**
@@ -50,7 +57,11 @@ public class CelebrityGame
 	 */
 	public boolean processGuess(String guess)
 	{
-		return guess.equals(gameCelebrity.getAnswer());
+		if (guess.trim().equalsIgnoreCase(gameCelebrity.getAnswer())) {
+			if (celebGameList.size() > 0) celebGameList.remove(0);
+			return true;
+		}
+		return false;
 	}
 
 	/**
@@ -60,7 +71,8 @@ public class CelebrityGame
 	 */
 	public void play()
 	{
-
+		gameCelebrity = celebGameList.get(0);
+		gameWindow.replaceScreen("GAME");
 	}
 
 	/**
@@ -73,9 +85,10 @@ public class CelebrityGame
 	 * @param type
 	 *            What type of celebrity
 	 */
-	public void addCelebrity(String name, String guess, String type)
-	{
-		celebGameList.add(new Celebrity(name, guess));
+	public void addCelebrity(String name, String guess, String type){
+		if (validateCelebrity(name) == true && validateClue(guess, type) == true) {
+			celebGameList.add(new Celebrity(name, guess));
+		}
 	}
 
 	/**
@@ -85,8 +98,8 @@ public class CelebrityGame
 	 */
 	public boolean validateCelebrity(String name)
 	{
-		return (name.length > 3);
-
+		name = name.trim();
+		return (name.length() > 3);
 	}
 
 	/**
@@ -98,7 +111,8 @@ public class CelebrityGame
 	 */
 	public boolean validateClue(String clue, String type)
 	{
-		return (clue.length > 9);
+		clue = clue.trim();
+		return (clue.length() > 9);
 	}
 
 	/**
@@ -108,7 +122,7 @@ public class CelebrityGame
 	 */
 	public int getCelebrityGameSize()
 	{
-		return 0;
+		return celebGameList.size();
 	}
 
 	/**
@@ -119,7 +133,7 @@ public class CelebrityGame
 	 */
 	public String sendClue()
 	{
-		return null;
+		return gameCelebrity.getClue();
 	}
 
 	/**
@@ -130,6 +144,6 @@ public class CelebrityGame
 	 */
 	public String sendAnswer()
 	{
-		return null;
+		return gameCelebrity.getAnswer();
 	}
 }

@@ -1,3 +1,10 @@
+
+/* Jerk Kafe: Joseph, Ruby, Kosta
+APCS
+L09 -- Some Folks Call It A Charades(Celebrity)
+2022-04-26
+time spent: 1.5 */
+
 /**
  * Celebrity base class for the Celebrity game.
  * @author cody.henrichsen
@@ -24,6 +31,10 @@ public class Celebrity
 	{
 		_clue = clue;
 		_answer = answer;
+	}
+	public Celebrity(String answer) {
+		_answer = answer;
+		_clue = "not created yet";
 	}
 
 	/**
