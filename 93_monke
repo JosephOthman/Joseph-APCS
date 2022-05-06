@@ -1,0 +1,50 @@
+JERK KAFE: Joseph, Ruby, Kosta
+APCS pd7
+HW93 -- exploring tree properties, extracting actionable intel from traversals
+2022-05-05r
+time spent: 0.4 hrs
+
+
+DISCO
+------------------------------------------------
+* Pre-order, In-order, and Post-order traversal of a tree depends on when a node
+is processed in relation to when it is reached, when its left branch is processed,
+when its right branch is processed, and when it is left for the last time.
+================================================
+
+
+QCC
+------------------------------------------------
+* What data structures that we know have tree-like structure and properties?
+================================================
+
+
+SELF-ASSESSMENT PROMPTS
+------------------------------------------------
+In which direction does a tree grow?
+- Downwards
+Provide as many alternate definitions as you can for "tree," using graph terminology ("closed/open tours", "paths", "cycles", etc). Maximize clarity, succinctness.
+- A tree is a connected graph with exactly 1 path between any two vertices (original)
+- A tree is a connected graph with no cycles.
+- A tree is a connected graph with n vertices and n-1 edges.
+Why is a balanced tree allowed a difference of 1 in height between right and left subtrees?
+- There will be times where you do not need each tree in the lowest full sublevel to have children, but
+the tree is still sufficiently balanced (in that it's almost completely symmetrical).
+Alternate (equivalent, but more succinct?) definitions of "balanced" tree?
+- There exists a perfect subtree of height X-1 with the same root as the original tree, where X is
+the height of the original tree.
+Is a perfect tree complete?
+- Yes. All levels are filled and it is left justified, so a perfect tree is complete.
+Is a complete tree balanced?
+- Yes
+Is the Man Who Is Tall Happy?
+- If we choose, we can live in a world of comforting illusion.
+What must be true of perfect trees but not others?
+- If a perfect tree has height n, then it must have exactly 2^(n+1) - 1 nodes.
+================================================
+
+
+C'EST POSSIBLE?
+------------------------------------------------
+- Yes, as my group constructed a sufficient tree.
+================================================
