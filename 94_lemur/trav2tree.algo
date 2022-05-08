@@ -1,0 +1,93 @@
+Jerk Kafe :: Joseph, Ruby, Kosta
+APCS pd7
+HW94 -- reverse engineering
+2022-05-06f
+time spent:  hrs
+
+
+DISCO
+------------------------------------------------
+* An in order traversal and an pre order traversal uniquely determine a tree.
+* The same is true with an in order traversal and post order traversal.
+* This is NOT true for a pre order traversal and post order traversal given.
+================================================
+
+
+QCC
+------------------------------------------------
+* What to do when given pre and post?
+================================================
+
+
+HOW KEEN ARE YOUR POWERS OF OBSERVATION?
+------------------------------------------------
+Q: For a given binary tree, how many unique pre-order traversals are there?
+A: Exactly one
+
+Q: For a given binary tree, how many unique in-order traversals are there?
+A: Exactly one
+
+Q: For a given binary tree, how many unique post-order traversals are there?
+A: Exactly one
+
+Q: For a given traversal, how many unique trees could have produced it?
+A: The nth catalan number, given n nodes.
+
+Q: Given a pre-order traversal, what can you infer about its tree?
+A: We know its root (first element) and rightmost leaf (last element).
+
+Q: Given a post-order traversal, what can you infer about its tree?
+A: We know its root (last element) and leftmost leaf (first element).
+
+Q: What does "1-to-1" mean?
+A: Of a function, each element in the domain has a unique element in the range,
+and each element in the range has a unique element in the domain.
+
+Q: What does "onto" mean?
+A: Some function maps into a set such that each element in that set is the function
+evaluated at some point in its domain.
+
+================================================
+
+
+ALGO for Post Order Traversal not Given
+------------------------------------------------
+givens:
+- pre order traversal
+- in order traversal
+
+procedure:
+- Take the first element of the pre order traversal. This will be the root of our tree.
+- Search for this element in the in order traversal.
+- Split the rest of the in order traversal into its left and right partitions.
+- The elements on the left will be on the left branch of this tree, and the elements
+on the right will be on the right branch of this tree.
+- Make sure to keep elements in the same order!
+- For both the left and right branches, recurse downwards: find the root of these subtrees
+by referring to the pre order traversal (whichever comes first in the pre order traversal
+will be the root), and split into left and right branches. Continue this until done (all
+nodes have been considered the root of some subtree).
+
+================================================
+
+ALGO for Pre Order Traversal not Given
+------------------------------------------------
+givens:
+- post order traversal
+- in order traversal
+
+procedure:
+- This is analogous to the algo for post order traversal not given
+- Take the last element of the pre order traversal. This will be the root of our tree.
+- Search for this element in the in order traversal.
+- Split the rest of the in order traversal into its left and right partitions.
+- The elements on the left will be on the left branch of this tree, and the elements
+on the right will be on the right branch of this tree.
+- Make sure to keep elements in the same order!
+- For both the left and right branches, recurse downwards: find the root of these subtrees
+by referring to the ppost order traversal (whichever comes last in the pre order traversal
+will be the root), and split into left and right branches. Continue this until done (all
+nodes have been considered the root of some subtree).
+
+================================================
+(replicate the algo section above as many times as necessary for distinct algos)
