@@ -1,0 +1,9 @@
+JRK Kaffe :: Joseph, Ruby, Kosta
+APCS pd7
+HW95 -- Algorithm as Data Structure
+2022-05-05
+time spent: .5 hrs
+
+1. a perfect binary tree has 2^d -1 nodes
+2. at each level, a perfect binary tree has 2^L nodes
+3. height of a complete binary tree w/ n nodes is ceiling(log(n+1)) - 1.
