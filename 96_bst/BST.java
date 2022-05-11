@@ -1,31 +1,3 @@
-/***
-Jerk Kafe :: Joseph, Ruby, Kosta
-APCS pd7
-HW96 -- BSTs is the Perfect Place for Shade
-2022-05-06f
-time spent:  hrs
-
-
-DISCO
-------------------------------------------------
-* Recursing down the left and/or right branches of a tree/subtree allowed us to
-easily complete these methods.
-* Better to get number of leaves the way we did, or to just look at traversal?
-Traversal length is equal to number of leaves in the tree, so this might be more
-optimal.
-================================================
-
-
-QCC
-------------------------------------------------
-* How do we quantify the run times of each method, with respect to:
-a) number of nodes
-b) height
-* We believe it is possible to write these iteratively using while loops as well.
-(We did this for the search method).
-================================================
-***/
-
 /**
  * class BST
  * v1:partial
