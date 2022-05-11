@@ -1,0 +1,12 @@
+JRK Kaffe :: Joseph, Ruby, Kosta
+APCS pd7
+HW96 -- BSTs is the Perfect Place for Shade
+2022-05-06
+time spent: .5 hrs
+
+
+- One important note to make is that sometimes we will only want to traverse down
+a singular path from root to leaf, without having to do much checking of other branches.
+We believe that this *might* be more useful in practice.
+- Why use trees to organize data? What are benefits of the parent-child structure?
+- Will we ever need non binary trees?
