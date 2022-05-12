@@ -1,0 +1,22 @@
+Jerk Kafe :: Joseph, Ruby, Kosta
+APCS pd7
+HW97 -- BSTs is the Perfect Place for Shade
+2022-05-11w
+time spent: 1.5 hrs
+
+
+DISCO
+------------------------------------------------
+* Set left and right to the removal of the target and the child, until we reach the
+node we need to remove.
+* Split into cases; if 0 or 1 children, easy.
+* If 2 children, get max of nodes on left branch; set the value of the node we're
+removing to this value.
+* Remove that max value from under this current node (that just got replaced).
+================================================
+
+
+QCC
+------------------------------------------------
+* Original algo with parent pointer was painful, didn't work.
+================================================
