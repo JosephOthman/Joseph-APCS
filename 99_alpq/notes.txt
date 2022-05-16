@@ -2,12 +2,17 @@ Jerk Kafe :: Joseph, Ruby, Kosta
 APCS pd7
 HW99 -- Some Are More Equal Than Others, Codified
 2022-05-16m
-time spent: 1.5 hrs
+time spent: 1.0 hrs
 
 
 DISCO
 ------------------------------------------------
-
+* You can either have a really efficent add or remove but not both
+* We created a very efficent remove that popped off the end whereas our
+  add method traversed the array to maintain a sorted by priority queue.
+* It is important to not forget the base case of when the array is empty.
 
 QCC
 ------------------------------------------------
+* Is it better to have a efficent add or remove method?
+

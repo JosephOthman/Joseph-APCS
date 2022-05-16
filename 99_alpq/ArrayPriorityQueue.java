@@ -51,12 +51,13 @@ public class ArrayPriorityQueue implements PriorityQueue {
   }
 
   public String toString() {
-    String retVal = "FRONT: ";
-    for(int i = size - 1; i > 0; i--) {
+    String retVal = "{";
+    for(int i = 0; i<=al.size()-1; i++) {
       retVal += al.get(i);
-      retVal += " --> ";
+      retVal += " ";
+
     }
-    retVal += al.get(0);
+     retVal += "}";
     return retVal;
   }
 
