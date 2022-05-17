@@ -1,0 +1,8 @@
+- Create a pointer to the node of removal, as well as to its parent (by piggybacking).
+- Look at the children of the node of removal.
+  - If it has 0 children, set the left/right (where ever this node is in relation
+  to the parent) of the parent to null.
+  - If it has 1 child, set the left/right of the parent to that node.
+  - If it has 2 children, then create a temp pointer to the node with the minimum
+  key of these 2 children. Then, recursively remove this node from the heap.
+  - Finally, set the left/right of the parent node to the node of the temp pointer.

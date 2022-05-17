@@ -1,0 +1,19 @@
+Jerk Kafe :: Joseph, Ruby, Kosta
+APCS pd7
+HW101 -- Heap o'Trouble
+2022-05-17t
+time spent: 0.5 hrs
+
+
+DISCO
+------------------------------------------------
+* As opposed to the BST where adding was easier and removing was harder to devise
+an algo, we believe that the heap has an easier removal algo and a harder insertion
+algo (although the removal is motivated by seeing the BST removal).
+
+QCC
+------------------------------------------------
+* Why use heaps?
+* What is the most practical choice for insertion; do we want a balanced heap, a
+heap that satisfies left-to-right increasing on each level, or something else
+entirely?

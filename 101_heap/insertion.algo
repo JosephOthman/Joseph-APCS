@@ -1,0 +1,4 @@
+- Insert the new node into the leftmost location of the lowest level (create a new
+level if necessary).
+- If this element is smaller than its parent, swap it and its parent.
+- Continue this until the key of the new node is greater than that of its parent.
