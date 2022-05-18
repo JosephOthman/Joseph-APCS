@@ -1,0 +1,16 @@
+Jerk Kafe :: Joseph, Ruby, Kosta
+APCS pd7
+HW102 -- Heap On Heapin' On
+2022-05-18w
+time spent: 1.0 hrs
+
+
+DISCO
+------------------------------------------------
+* We can add and remove from a heap both in log n time, which is very efficient
+compared to other data structures.
+
+QCC
+------------------------------------------------
+* Making sure that the index was updating at the right time was crucial to the
+success of our algorithms.
