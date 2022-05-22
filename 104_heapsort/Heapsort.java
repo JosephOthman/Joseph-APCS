@@ -151,10 +151,10 @@ public class Heapsort
     int rc = 2*pos + 2; //index of right child
 
     //pos is not in the heap or pos is a leaf position
-    if ( a.length <= lc )
+    if ( a.length <= lc || last <= lc )
       retVal = -1;
     //if no right child, then left child is only option for min
-    else if ( a.length == rc )
+    else if ( a.length == rc || last == rc )
       retVal = lc;
     //have 2 children, so compare to find greatest
     else if ( a[lc] > a[rc] )
